@@ -9,6 +9,7 @@ body {
   background-color: black;
   color: white;
   /* color: #333; */
+  /* filter: invert(100%); */
   margin: 0;
   padding: 2px;
   box-sizing: border-box;
@@ -40,6 +41,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   padding: 0 0.4em 0 0.4em;
+  /* color: white !important; */
   /* margin: 0 0 0.5em 0; */
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -52,6 +54,9 @@ input:disabled {
 
 input[type='range'] {
   height: 0;
+}
+input[type='checkbox'] {
+  height: 18px;
 }
 
 button {
@@ -87,4 +92,42 @@ button:focus {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.849);
+}
+
+/* overwrite ugly default styles of json editor */
+div[class*='jsoneditor-mode-tree'] {
+  border: none !important;
+  border-right: thin solid #5e5e4c !important;
+}
+div[class*='jsoneditor-field'] {
+  color: #858585 !important;
+}
+div[class*='jsoneditor-object'] {
+  color: #7fd4c9 !important;
+}
+div[class*='jsoneditor-array'] {
+  color: #d4ce7f !important;
+}
+div[class*='jsoneditor-frame'],
+*[class*='jsoneditor-menu'],
+div[class*='jsoneditor-navigation-bar'],
+textarea[class*='jsoneditor-text'] {
+  color: #7fd4c9 !important;
+  background-color: rgb(39, 39, 39) !important;
+  border: none !important;
+}
+div[class*='jsoneditor-navigation-bar'] {
+  border: none !important;
+  background-color: #310a1f !important;
+}
+tr[class*='jsoneditor-highlight'],
+tr[class*='jsoneditor-selected'] {
+  background-color: #310a1f !important;
+}
+button[class*='jsoneditor-button'] {
+  width: 18px !important;
+  height: 18px !important;
+}
+button[class*='jsoneditor-invisible'] {
+  width: 1px !important;
 }
