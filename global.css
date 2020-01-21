@@ -101,6 +101,11 @@ button:focus {
 div[class*='jsoneditor-mode-tree'] {
   border: none !important;
   border-right: thin solid #5e5e4c !important;
+  position: inherit;
+  /* z-index: 999; */
+}
+div[class^='jsoneditor-anchor'] {
+  z-index: 999;
 }
 div[class*='jsoneditor-field'] {
   color: #858585 !important;
