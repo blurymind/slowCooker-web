@@ -116,6 +116,7 @@ div[class*='jsoneditor-object'] {
 div[class*='jsoneditor-array'] {
   color: #d4ce7f !important;
 }
+
 div[class*='jsoneditor-frame'],
 *[class*='jsoneditor-menu'],
 div[class*='jsoneditor-navigation-bar'],
@@ -123,6 +124,7 @@ textarea[class*='jsoneditor-text'] {
   color: #7fd4c9 !important;
   background-color: rgb(39, 39, 39) !important;
   border: none !important;
+  position: relative;
 }
 div[class*='jsoneditor-navigation-bar'] {
   border: none !important;
