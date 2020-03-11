@@ -141,3 +141,7 @@ button[class*='jsoneditor-button'] {
 button[class*='jsoneditor-invisible'] {
   width: 1px !important;
 }
+
+.hide {
+  display: none;
+}
